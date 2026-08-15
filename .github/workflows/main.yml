@@ -47,7 +47,6 @@ jobs:
         POSTGRES_DB: django_db
         # Сервер БД запущен в Docker, но его порт проброшен на хост
         # Поэтому подключаемся к 127.0.0.1:5432
-        POSTGRES_DB: django_db
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
       # Вызываем flake8 и указываем ему,

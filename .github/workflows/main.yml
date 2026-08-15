@@ -168,7 +168,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: "docker-compose.production.yml"
           target: "taski"
-
       - name: Executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
         with:
